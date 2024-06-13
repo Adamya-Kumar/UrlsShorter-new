@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Url-Shortener-User-Login-Page</h1>
+   
+    <form action="/user/login" method="POST">
+       
+        <label >Enter Email : </label>
+        <input type="email" name="email" placeholder="example.@gmail.com">
+        <label >Enter password : </label>
+        <input type="text" name="password" placeholder="password" >
+            <button type="submit">Login</button>
+    </form> 
+    <div> 
+        <form method="POST" action="/user" >
+            <button type="submit">signup</button>
+        </form>
+    </div>
+</body>
+</html>
