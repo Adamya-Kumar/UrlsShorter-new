@@ -10,7 +10,7 @@ const UserRouter=require('./routes/userauth')
 const cookieParser=require('cookie-parser')
 const {restrictedToLoggedInUserOnly,checkAuth}=require('./middleware/auth')
 const app = express();
-const PORT = ;
+const PORT =  process.env.PORT;
 //Middlewares
 app.use(express.urlencoded({ extended: false }));
 app.set('views', path.resolve('views'));
