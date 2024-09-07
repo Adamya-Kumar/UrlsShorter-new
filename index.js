@@ -1,5 +1,7 @@
 const express = require("express");
+const dotenv = require('dotenv');
 const path=require('path')
+require('dotenv').config();
 const url = require("./models/url");
 const UrlRouter = require("./routes/url");
 const StaticRoute=require('./routes/StaticRouter')
@@ -8,7 +10,7 @@ const UserRouter=require('./routes/userauth')
 const cookieParser=require('cookie-parser')
 const {restrictedToLoggedInUserOnly,checkAuth}=require('./middleware/auth')
 const app = express();
-const PORT = 4000;
+const PORT = ;
 //Middlewares
 app.use(express.urlencoded({ extended: false }));
 app.set('views', path.resolve('views'));
